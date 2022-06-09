@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Oswald:wght@400;500&display=swap');
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Oswald', sans-serif;*/
+
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
 :root{
     --dark: black;
     --white: white;
@@ -32,7 +38,7 @@ nav{
     padding-right: 20px;
 }
 .scrolled{
-    background-color: #ffffff6e;
+    background-color:var(--white);
     height: 90px;
 }
 nav>ul{
@@ -91,9 +97,8 @@ a:hover:after { transform: scaleX(1); }
     left:5px;
     top:25px;
     width: 50px;
-    height: 6px;
+    height: 4px;
     background:var(--darkblue);
-    border-radius: 5px;
     transition: all .5s ease-in-out;
 }
 .menu-btn__burger::before,
@@ -101,9 +106,8 @@ a:hover:after { transform: scaleX(1); }
     content: '';
     position: absolute;
     width: 50px;
-    height: 6px;
+    height: 4px;
     background: var(--darkblue);
-    border-radius: 5px;
     transition: all .5s ease-in-out;
 }
 .menu-btn__burger::before {
@@ -462,7 +466,7 @@ tbody tr:nth-child(2n) {
     color: var(--dark);
     padding: 5px;
 }
-button:hover, .bx:hover{
+button:hover, .media .bx:hover{
     color: var(--darkblue);
 }
 h2{
@@ -641,7 +645,7 @@ textarea{
         z-index: 1;
     }
     .shape.active{
-        background: var(--light);
+        background: var(--white);
     }
     .logo{
         top: 15px;
